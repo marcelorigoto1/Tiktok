@@ -5,7 +5,7 @@ import db from "./config/firebase";
 import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
-  const[video, setVideos] = useState([]);
+  const [video, setVideos] = useState([]);
 
   async function getVideos() {
     const videosCollection = collection(db, "videos");
